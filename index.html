@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAE4JgUaGyFKfTlEgcaBI0A18NBVbgwxLA",
+    authDomain: "dictonaryaiesec.firebaseapp.com",
+    databaseURL: "https://dictonaryaiesec.firebaseio.com",
+    projectId: "dictonaryaiesec",
+    storageBucket: "dictonaryaiesec.appspot.com",
+    messagingSenderId: "970533204191"
+  };
+  firebase.initializeApp(config);
+</script>
+	  
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	<script type="text/javascript" src="js/ConfigFirebase.js"></script>
+	<script type="text/javascript" src="js/typeahead.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/plantilla.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+				<div style="margin-top: 20px;">
+					<a href="https://www.facebook.com/groups/eiarocks/" target="_blank"><img src="img/social-media-buttons1.png"/></a>				
+			
+					<a href="https://www.instagram.com/upbrocks/" target="_blank"><img src="img/social-media-buttons2.png"/></a>
+				
+					<a href="https://www.youtube.com/channel/UCDhFuSHWgvxb0U582LlhvhQ" target="_blank"><img src="img/social-media-buttons3.png"/></a>	
+				</div>
+				
+			</div>
+			<div class="col-md-4" ><img src="img/Rocker-Dictionary-Title.png" >
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col-md-4 col-md-offset-4">
+				<div class="form-group">
+          			<input data-provide="typeahead" type="text" id="txtBuscar" class="form-control" placeholder="Search">
+        		</div>
+			</div>
+			<div class="col-md-8 col-md-offset-4">
+				<div class="form-group">
+          			<p class="col-md-3" id="txtName"></p>
+          			<p class="col-md-5" id="txtMeaning"></p>
+        		</div>
+			</div>
+			<div class="col-md-7 col-md-offset-5">
+				<div class="form-group">          			
+          			<p class="col-md-5" id="txtDescription"></p>
+        		</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
