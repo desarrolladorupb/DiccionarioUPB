@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	 
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="js/sweet/sweetalert.css">
+
+	<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+          
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.css"/>
+ 
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.js"></script>
+	<script type="text/javascript" src="js/sweet/sweetalert.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	<script type="text/javascript" src="js/ConfigFirebase.js"></script>
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/cargar.js"></script>
+</head>
+<body>
+	
+
+
+	<div class="container-fluid">
+		<div class="row">			 
+			<div class="col-md-6 col-md-offset-5">
+				<h1>Dictionary</h1>
+			</div>
+			
+		</div>
+		<div class="row col-md-offset-4">			 
+			
+			<div class="col-md-2"><a class="btn btn-default" id="btnInsertar" href="#" role="button">Insertar</a></div>
+			<div class="col-md-2"><a class="btn btn-default" id="btnModificar" href="#" role="button">Modificar</a></div>
+			<div class="col-md-2"><a class="btn btn-default" id="btnEliminar" href="#" role="button">Eliminar</a></div>
+		</div>
+		<div class="row">			 
+			<div class="col-md-10 col-md-offset-1">
+				<!-- Inicio de tabla -->
+		        	<table id="dtSiglas" class="display selectedTable" cellspacing="0" width="100%">
+				        <thead>
+				            <tr>
+				                <th>Sigla</th>
+				                <th>Significado</th>
+				                <th>Descripción</th>				                
+				            </tr>
+				        </thead>				        
+				        <tbody>
+				            
+				        </tbody>
+				    </table>
+		        	<!-- FIn de la tabla-->
+			</div>
+			
+		</div>
+		<!-- Inicio Modal siglas-->
+	<div id="mdlSigla" class="modal modal-fixed-footer" >
+		<div class="modal-content">
+			<h4>Siglas</h4>
+			<div class="row">
+				<div class="input-field col s12">
+					<input placeholder="Siglas" id="txtSiglas" type="text" class="validate">
+					<label for="txtSiglas">Siglas</label>
+		        </div>		      
+		        <div  class="input-field col s12">
+					<input placeholder="Significado" id="txtSignificado" type="text" class="validate">
+					<label for="txtSignificado">Significado</label>
+	       		</div>
+	       		<div class="input-field col s12">
+		          <textarea id="txtDescripcion" class="materialize-textarea"></textarea>
+		          <label for="txtDescripcion">Descripción</label>
+		        </div>
+	        </div>
+	        
+	       
+		</div>
+		<div class="modal-footer">				
+			<a href="#!" id="btnGuardar" class="modal-action waves-effect waves-green btn-flat ">Guardar</a>
+			<a href="#!" id="btnCancelar" class="modal-action waves-effect waves-green btn-flat ">Cancelar</a>
+		</div>		
+	</div>
+	<!-- fin Modal OKRs-->
+	</div>
+</body>
+</html>
