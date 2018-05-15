@@ -2,21 +2,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Dictionary UPB</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<script
 	  src="https://code.jquery.com/jquery-3.1.1.min.js"
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	  crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyA-pvumSXSLneRyZLXuM0dnZj2Y4EwdG-4",
-    authDomain: "prueba-6f2d0.firebaseapp.com",
-    databaseURL: "https://prueba-6f2d0.firebaseio.com",
-    projectId: "prueba-6f2d0",
-    storageBucket: "prueba-6f2d0.appspot.com",
-    messagingSenderId: "88001220806"
+    apiKey: "AIzaSyAE4JgUaGyFKfTlEgcaBI0A18NBVbgwxLA",
+    authDomain: "dictonaryaiesec.firebaseapp.com",
+    databaseURL: "https://dictonaryaiesec.firebaseio.com",
+    projectId: "dictonaryaiesec",
+    storageBucket: "dictonaryaiesec.appspot.com",
+    messagingSenderId: "970533204191"
   };
   firebase.initializeApp(config);
 </script>
@@ -34,43 +36,41 @@
 	<script type="text/javascript" src="js/typeahead.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/plantilla.css">
+	<link rel="shortcut icon" href="img/iconnnn.ico" /> 
 </head>
 <body>
-	<h1 id=holamundo></h1>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-4">
-				<div style="margin-top: 20px;">
-					<a href="https://www.facebook.com/groups/eiarocks/" target="_blank"><img src="img/social-media-buttons1.png"/></a>				
-			
-					<a href="https://www.instagram.com/upbrocks/" target="_blank"><img src="img/social-media-buttons2.png"/></a>
-				
-					<a href="https://www.youtube.com/channel/UCDhFuSHWgvxb0U582LlhvhQ" target="_blank"><img src="img/social-media-buttons3.png"/></a>	
-				</div>
-				
-			</div>
-			<div class="col-md-4" ><img src="img/Rocker-Dictionary-Title.png" >
-			</div>
+	<header class="headerImg">
+		<div class="Img" ><img src="img/Rocker-Dictionary-Title.png" ></div>
+	</header>
+	<section class="sectionInput">
+		<div class="divImput">
+			<input data-provide="typeahead" type="text" id="txtBuscar" class="form-control" placeholder="Buscar">
 		</div>
-		<div class="row">
-			
-			<div class="col-md-4 col-md-offset-4">
-				<div class="form-group">
-          			<input data-provide="typeahead" type="text" id="txtBuscar" class="form-control" placeholder="Search">
-        		</div>
+	</section>
+	<div>
+		<div class="Tetxts">
+			<div class="ResulText">
+				<p id="txtName"></p>
+				<p id="txtMeaning"></p>
 			</div>
-			<div class="col-md-8 col-md-offset-4">
-				<div class="form-group">
-          			<p class="col-md-3" id="txtName"></p>
-          			<p class="col-md-5" id="txtMeaning"></p>
-        		</div>
-			</div>
-			<div class="col-md-7 col-md-offset-5">
-				<div class="form-group">          			
-          			<p class="col-md-5" id="txtDescription"></p>
-        		</div>
+			<div class="ResultDesc">
+				<p id="txtDescription"></p>
 			</div>
 		</div>
 	</div>
+	<footer class="footerIcon">
+		<div class="Icon">
+			<a href="https://communicationsupb.wixsite.com/upbweekly" target="_blank"><img src="img/rocks.png"/></a>
+
+			<a href="https://www.facebook.com/groups/eiarocks/" target="_blank"><img src="img/social-media-buttons1.png"/></a>				
+			<a href="https://www.instagram.com/upbrocks/" target="_blank"><img src="img/social-media-buttons2.png"/></a>
+				
+			<a href="https://www.youtube.com/channel/UCDhFuSHWgvxb0U582LlhvhQ" target="_blank"><img src="img/social-media-buttons3.png"/></a>	
+		</div>
+		<div class="copyRigth">
+			<span>© COPYRIGHT-UPB-MEDELLIN-2017</span>
+		</div>
+	</footer>
+	<h1 id=holamundo></h1>
 </body>
 </html>

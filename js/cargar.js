@@ -2,12 +2,16 @@ $(document).ready(function(){
 	var btnInsertar=$("#btnInsertar");
 	var btnEliminar=$("#btnEliminar");
 	var btnModificar=$("#btnModificar");
+
 	var btnGuardar=$("#btnGuardar");
 	var btnCancelar=$("#btnCancelar");
+	
 	var txtSiglas=$("#txtSiglas");
 	var txtSignificado=$("#txtSignificado");
 	var txtDescripcion=$("#txtDescripcion");
+
 	var mdlSigla=$("#mdlSigla").modal({dismissible: false,});
+	
 	var dtSiglas=$("#dtSiglas").DataTable({
 				"paging":   false,
 		        "ordering": false,
@@ -146,6 +150,7 @@ $(document).ready(function(){
 
 	 $(document).on( 'click', '.selectedTable tbody tr', function () {
     	var table=$($(this).parent("tbody").parent("table"));
+    	console.log(table);
     	
         if ( $(this).hasClass('selected') ) {
             $(this).removeClass('selected');

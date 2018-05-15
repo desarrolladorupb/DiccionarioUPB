@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Upload Information</title>
 	<script
 	  src="https://code.jquery.com/jquery-3.1.1.min.js"
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -27,29 +27,27 @@
 	<script type="text/javascript" src="js/ConfigFirebase.js"></script>
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script type="text/javascript" src="js/cargar.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/plantilla.css">
+	<link rel="shortcut icon" href="img/iconnnn.ico" />
 </head>
 <body>
 	
 
 
 	<div class="container-fluid">
-		<div class="row">			 
-			<div class="col-md-6 col-md-offset-5">
+		<div class="title">			 
 				<h1>Dictionary</h1>
-			</div>
-			
 		</div>
-		<div class="row col-md-offset-4">			 
-			
-			<div class="col-md-2"><a class="btn btn-default" id="btnInsertar" href="#" role="button">Insertar</a></div>
-			<div class="col-md-2"><a class="btn btn-default" id="btnModificar" href="#" role="button">Modificar</a></div>
-			<div class="col-md-2"><a class="btn btn-default" id="btnEliminar" href="#" role="button">Eliminar</a></div>
+		<div class="groupBut">			 
+			<div class="btns"><a class="btn btn-default" id="btnInsertar" href="#" role="button">Insertar</a></div>
+			<div class="btns"><a class="btn btn-default" id="btnModificar" href="#" role="button">Modificar</a></div>
+			<div class="btns"><a class="btn btn-default" id="btnEliminar" href="#" role="button">Eliminar</a></div>
 		</div>
 		<div class="row">			 
 			<div class="col-md-10 col-md-offset-1">
 				<!-- Inicio de tabla -->
 		        	<table id="dtSiglas" class="display selectedTable" cellspacing="0" width="100%">
-				        <thead>
+				        <thead class="thead">
 				            <tr>
 				                <th>Sigla</th>
 				                <th>Significado</th>
